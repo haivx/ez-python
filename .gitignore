@@ -1,2 +1,18 @@
 
 CoffeeMachine/__pycache__/
+
+.DS_Store
+
+.idea/
+
+venv/bin/
+
+turtleDesign/
+
+venv/lib/python3.8/site-packages/_distutils_hack/
+
+venv/lib/python3.8/site-packages/
+
+venv/
+
+CoffeeMachineOOP/__pycache__/

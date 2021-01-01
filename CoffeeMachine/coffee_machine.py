@@ -1,5 +1,6 @@
 from main import resources, MENU
 
+
 def check_sufficient(order_ingredient):
     for item in order_ingredient:
         if order_ingredient[item] >= resources[item]:
@@ -7,6 +8,7 @@ def check_sufficient(order_ingredient):
             return False
         else:
             return True
+
 
 def process_coin():
     print("Please insert coins")
@@ -16,6 +18,10 @@ def process_coin():
     pennies = input("What many pannies?: ")
     total = int(quaters) * 0.25 + int(dimes) * 0.1 + int(nickles) * 0.05 + int(pennies) * 0.01
     return total
+
+
+profit = 0
+
 
 def is_transaction_successful(money_received, drink_cost):
     if money_received > drink_cost:
@@ -28,12 +34,13 @@ def is_transaction_successful(money_received, drink_cost):
         print('Sorry that\'s not enough money. Money refunded')
         return False
 
+
 def make_coffee(drink_name, order_ingredient):
     for item in order_ingredient:
         resources[item] -= order_ingredient[item]
     print(f"Here is your {drink_name}")
 
-profit = 0
+
 is_on = True
 while is_on:
     choice = input("What would you like? (espresso/latte/cappuccino)")
