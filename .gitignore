@@ -7,7 +7,6 @@ CoffeeMachine/__pycache__/
 
 venv/bin/
 
-turtleDesign/
 
 venv/lib/python3.8/site-packages/_distutils_hack/
 
@@ -16,3 +15,7 @@ venv/lib/python3.8/site-packages/
 venv/
 
 CoffeeMachineOOP/__pycache__/
+
+tutorial-env/bin/
+
+tutorial-env/lib/python3.9/site-packages/
